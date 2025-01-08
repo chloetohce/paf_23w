@@ -1,10 +1,10 @@
 package workshop.paf_23w.model;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 public class Order {
     private int id;
-    private Date orderDate;
+    private LocalDateTime orderDate;
     private int customerId;
     private double total;
     private double cost;
@@ -12,7 +12,7 @@ public class Order {
     public Order() {
     }
 
-    public Order(int id, Date orderDate, int customerId, double total, double cost) {
+    public Order(int id, LocalDateTime orderDate, int customerId, double total, double cost) {
         this.id = id;
         this.orderDate = orderDate;
         this.customerId = customerId;
@@ -26,10 +26,10 @@ public class Order {
     public void setId(int id) {
         this.id = id;
     }
-    public Date getOrderDate() {
+    public LocalDateTime getOrderDate() {
         return orderDate;
     }
-    public void setOrderDate(Date orderDate) {
+    public void setOrderDate(LocalDateTime orderDate) {
         this.orderDate = orderDate;
     }
     public int getCustomerId() {
